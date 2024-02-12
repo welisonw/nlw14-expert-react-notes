@@ -1,30 +1,78 @@
-# React + TypeScript + Vite
+<p align='center'>
+  <img alt="Icon logo" src="./src/assets/logo.png" width="220px" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](./src/assets/thumbnail.png)
 
-Currently, two official plugins are available:
+## 🗒️ Sobre o projeto
+Aplicativo de notas desenvolvido durante a NLW Expert da Rocketseat. A aplicação tem como principal finalidade a criação de notas via texto digitado ou por gravação de áudio, que é traduzido para texto pela lib nativa do browser SpeechRecognition API ([consultar compatibilidade do browser](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition#browser_compatibility)). 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Acesse o deploy da aplicação
+[![Deploy with Vercel](https://vercel.com/button)](https://nlw14-expert-react-notes.vercel.app/)
 
-## Expanding the ESLint configuration
+## ⚙️ Funcionalidades
+- Criar uma nova nota por texto digitado ou por gravação de áudio
+- Apagar uma nota existente
+- Listagem de notas por data de criação
+- Filtragem de notas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Tecnologias e ferrementas utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactnative.dev/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [Lucide React](https://lucide.dev/guide/packages/lucide-react)
+- [date-fns](https://date-fns.org/)
+- [Sonner](https://sonner.emilkowal.ski/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+
+## 💻 Instalando e rodando o projeto localmente
+Para executar a aplicação em sua máquina localmente, certifique-se de ter o Node.js e um gerenciador de pacotes instalados antes de prosseguir com as etapas abaixo:
+
+
+```bash
+# Passo 1: Clone este repositório
+$ git clone https://github.com/welisonw/nlw14-expert-react-notes.git
+
+
+# Passo 2: Acessa a pasta do projeto
+$ cd nlw14-expert-react-notes
+
+
+
+# Passo 3: Instale as dependências
+## pnpm 
+$ pnpm install
+
+ou
+
+## npm
+$ npm install
+
+ou
+
+## yarn
+$ yarn install
+
+
+# Passo 4: Inicie o projeto
+## pnpm
+pnpm run dev
+
+ou
+## npm
+npm run dev
+
+ou
+
+## yarn
+yarn run dev
+
+# A aplicação estará disponível em http://localhost:5173.
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 📝 Licença
+Esse projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
